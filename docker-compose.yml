@@ -1,0 +1,10 @@
+version: '3'
+services:
+  data2text:
+    container_name: 'data2text-entity'
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - "./boxscore-data:/root/boxscore-data"
+
